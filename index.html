@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1ae078efb4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#contact">Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>FULL STACK DEV</p>
+            <h1>I build <span>quality</span> products</h1>
+            <p>I make sure my works are neat, clean, and professional.</p>
+            <div class="button-container">
+                <a href="#contact" class="btn">Resume</a>
+                <a href="#projects" class="btn">Projects</a>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!-------------------------about--------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About the project</h1>
+                <br>
+                <p>They said confusion is part of programming, I'm still confused whenever I create my own program and website. By the way I am Archie Custodio, a student from Holy Angel University. I am currently studying Bachelor of Science in Information Technology Specialization in Web Development. While I am studying I started to adapt a lot of things, I am a fun going person, I can manage my time, I can communicate well. I'm still working about my confidence about myself but I am confident about my skills, I know what I can provide because I have work hard on what I do.</p>
+                <br>
+                <p>In this project I used html, css, and javascript to create this portfolio. This website includes 6 navigation buttons where it navigates where it is linked. At the contact part you can put your details and contact me personally if you have any questions. You can also download my resume beside the contact page where you can also click the resume button at the upper right where it is headed at the contact page and beside the contact you can see the "Download Resume" button. After you read this there are 3 buttons below this text where you can click to see the information that is inputted. It has my Skills, Education, and Email. I did put my student email and if you want to know my personal email you can download my resume for more information. Third page you can also see my projects that I have been finished before. This work is my project alone and I used all my knowledge creating this project I hope you enjoy browsing into my portolio.</p>
+                <br>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('email')">Email</p>
+                    
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Web Designing</li>
+                        <li><span>Web Development</span><br>Web and App Development</li>
+                        <li><span>App Development</span><br>Building Andriod/iOS apps</li>
+                        <li><span>Databases</span><br>MySQL, MongoDB</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Elementary</span><br>2015 | Lakandula Elementary School</li>
+                        <li><span>Junior Highschool</span><br>2019 | Holy Angel University</li>
+                        <li><span>Senior Highschool</span><br>2021 | Holy Angel University</li>
+                        <li><span>College</span><br>Current | Holy Angel University</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="email">
+                    <ul>
+                        <li><span>For more questions you can ask me here</span><br>adcustodio1@student.hau.edu.ph</li>
+ 
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------projects----------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>KATO</h3>
+                    <p>This is a website with a built-in database where you can upload pictures and share it to the community. I am assigned at the designing part of this project and help design the frontend. I also help at the back end when it is needed and I also volunteer so that I can apply my knowledge and help my team.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Mysweetspot</h3>
+                    <p>This is a website built in wordpress. It is a website about baking, and business related. This website was made in wordpress so the work we inputted are less than the other website. Since we are not that familiar of wordpress, we had a hardtime designing the website. In this project I help inputting the products, designing the layout of the pages, and I also input some descriptions for the products.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Pet-shop.com</h3>
+                    <p>This website is made from php where it is a website for pet foods, toys, and etc. This website has database also and it is made from html, css, javascript, and php. In this project I worked on the add to cart part where we must input the data of the selected item into the cart and to the database. I also helped on designing the the layout of the website and also suggested my ideas into making the website for more vast ideas.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn1">See more</a>
+    </div>
+</div>
+
+<!--------contact-------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>adcustodio@student.hau.edu.ph</p>
+                <p><i class="fa-solid fa-phone"></i>1283129038</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-resume.pdf" download class="btn1 btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn1 btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © CA.</p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwe0qFRQsqXF4w9Thzbc1gsjRLy9k_tPcNuDDYxIbSvvgGGIjTHdVsga47QIDgTCd4s/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent succesfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset(
+            )
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+</html>

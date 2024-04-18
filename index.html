@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://kit.fontawesome.com/1ae078efb4.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="popup" id="popup">
+    <div class="imgBx">
+        <div class="content-wrapper">
+            <img src="images/whitelogo.png">
+            <h1>Welcome</h1>
+        </div>
+    </div>
+    
+        <p>Browse through my portfolio to see my credentials!</p>
+    <a class="popupa" href="#">Let's go</a>
+</div>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/Asset5.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li class="contact-button"><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p class="text_p1">Hello, I am</p>
+            <h1 class="title_text">Chie</h1>
+            <p class="text_p2">A Fullstack Developer</p>
+        </div>
+        
+    </div>
+</div>
+<!-------------------------about--------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <br>
+                <p>They said confusion is part of programming, I'm still confused whenever I create my own program and website. By the way I am Archie Custodio, a student from Holy Angel University. I am currently studying Bachelor of Science in Information Technology Specialization in Web Development. While I am studying I started to adapt a lot of things, I am a fun going person, I can manage my time, I can communicate well. I'm still working about my confidence about myself but I am confident about my skills, I know what I can provide because I have work hard on what I do.</p>
+                <br>
+                <p>In this project I used html, css, and javascript to create this portfolio. This website includes 6 navigation buttons where it navigates where it is linked. At the contact part you can put your details and contact me personally if you have any questions. You can also download my resume beside the contact page where you can also click the resume button at the upper right where it is headed at the contact page and beside the contact you can see the "Download Resume" button. After you read this there are 3 buttons below this text where you can click to see the information that is inputted. It has my Skills, Education, and Email. I did put my student email and if you want to know my personal email you can download my resume for more information. Third page you can also see my projects that I have been finished before. This work is my project alone and I used all my knowledge creating this project I hope you enjoy browsing into my portolio.</p>
+                <br>
+                <div class="tab-titles">
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('email')">Email</p>
+                    
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <ul>
+                            <li><span>College</span><br></li>
+                            <li>Current | Holy Angel University</li>
+                            <li>Bachelor of Science in Information Technology Specialization in Web Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="email">
+                        <ul>
+                            <li><span>For more questions you can ask me here</span></li>
+                             <li>archieewcustodio@gmail.com</li> 
+ 
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------------skils--------------------->
+<div id="skills">
+    <div class="container">
+        <h1 class="sub-title">Skills</h1>
+        <br>
+        <div class="wrapper">
+            <div class="skills_content">
+                <h2>Frontend</h2>
+                <div class="loading-bar animate">
+                    <span class="bar_text" style="width: 92%;"></span>
+                </div>
+                <h2>Backend</h2>
+                <div class="loading-bar animate">
+                    <span class="bar_text" style="width: 71%;"></span>
+                </div>
+                <h2>Database</h2>
+                <div class="loading-bar animate">
+                    <span class="bar_text" style="width: 67%;"></span>
+                </div>
+                <h2>DevOps</h2>
+                <div class="loading-bar animate">
+                    <span class="bar_text" style="width: 60%;"></span>
+                </div>
+                <h2>Mobiledev</h2>
+                <div class="loading-bar animate">
+                    <span class="bar_text" style="width: 82%;"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------projects----------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>FP Cuisines</h3>
+                    <p>This website is built from html, css, and javascript. This website is a blog website where it is about the famous filipino cuisine that we can introduce to the other country. This is a responsive website that can work with other devices. This website is my own project that I made for one of my subject, it is my final requirement.</p>
+                    <a href="https://archieew.github.io/project1/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Mysweetspot</h3>
+                    <p>This is a website built in wordpress. It is a website about baking, and business related. This website was made in wordpress so the work we inputted are less than the other website. Since we are not that familiar of wordpress, we had a hardtime designing the website. In this project I help inputting the products, designing the layout of the pages, and I also input some descriptions for the products.</p>
+                    <a href="https://mysweetsspot.com/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Pet-shop.com</h3>
+                    <p>This website is made from php where it is a website for pet foods, toys, and etc. This website has database also and it is made from html, css, javascript, and php. In this project I worked on the add to cart part where we must input the data of the selected item into the cart and to the database. I also helped on designing the the layout of the website and also suggested my ideas into making the website for more vast ideas.</p>
+                    <a href="https://pet-shopp.bitbucket.io/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn1">See more</a>
+    </div>
+</div>
+
+<!--------testimonials-------->
+
+<section class="testimonial-area">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="title">What they say about me?</h2>
+        </div>
+        <div class="testimonials-content">
+            <div class=" swiper testimonials-slider js-testimonials-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide testimonials-item">
+                        <div class="info">
+                            <img src="images/tst1.png" alt="img">
+                            <div class="text-box">
+                                <h3 class="name">Renz Vitug</h3>
+                                <span class="job">Web Developer</span>
+                            </div>
+                        </div>
+                        <p>Fascinating website portfolio really puts a character with the colors and organized portfolio.</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide testimonials-item">
+                        <div class="info">
+                            <img src="images/tst2.png" alt="img">
+                            <div class="text-box">
+                                <h3 class="name">Aaron Punzalan</h3>
+                                <span class="job">Web Developer</span>
+                            </div>
+                        </div>
+                        <p>Archie is a very hardworking person, I can see that in every works he do.</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide testimonials-item">
+                        <div class="info">
+                            <img src="images/tst3.png" alt="img">
+                            <div class="text-box">
+                                <h3 class="name">Tetsuhiro Kodo</h3>
+                                <span class="job">Web Developer</span>
+                            </div>
+                        </div>
+                        <p>We known each other for years and he is a really good at his works.</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide testimonials-item">
+                        <div class="info">
+                            <img src="images/tst4.png" alt="img">
+                            <div class="text-box">
+                                <h3 class="name">J Victorino Zulueta</h3>
+                                <span class="job">UI/UX Designer</span>
+                            </div>
+                        </div>
+                        <p>He is a highly consistent designer in his output and made ensures that every project is quality.</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide testimonials-item">
+                        <div class="info">
+                            <img src="images/tst5.png" alt="img">
+                            <div class="text-box">
+                                <h3 class="name">Krizia Gale Trono</h3>
+                                <span class="job">Occupational Therapist</span>
+                            </div>
+                        </div>
+                        <p>He likes keeping his works simple yet appealing to everyone who sees them.</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide testimonials-item">
+                        <div class="info">
+                            <img src="images/tst6.png" alt="img">
+                            <div class="text-box">
+                                <h3 class="name">Chrisjohn Crisostomo</h3>
+                                <span class="job">Fullstack Developer</span>
+                            </div>
+                        </div>
+                        <p>He is very organized and goal-oriented with whatever he's doing.</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination js-testimonials-pagination"></div>
+            <h2>Swipe to see the comments</h2>
+        </div>
+    </div>
+</section>
+
+
+
+<!--------contact-------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>archieewcustodio@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>09943443441</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/archieew"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/archiecustodioo"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/archieewcustodio/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/archieew"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <br>
+                <h2>Click to download below</h2>
+                <a href="images/my_resume.pdf" download class="btn1 btn2">Resume</a>
+                <a href="images/my_coverletter.pdf" download class="btn1 btn2">Cover Letter</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn1 btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © CA.</p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwe0qFRQsqXF4w9Thzbc1gsjRLy9k_tPcNuDDYxIbSvvgGGIjTHdVsga47QIDgTCd4s/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent succesfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset(
+            )
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+  <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get the "Let's go" button
+            var letsGoButton = document.querySelector('.popupa');
+
+            // Get the popup
+            var popup = document.getElementById("popup");
+
+            // Add click event listener to the "Let's go" button
+            letsGoButton.addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent the default behavior of the link
+                popup.style.display = "none"; // Hide the popup
+            });
+        });
+  </script>
+
+<script>
+   const swiper = new Swiper('.js-testimonials-slider', {
+        grabCursor: true,
+        spaceBetween: 30,
+        pagination:{
+            el: '.swiper-pagination js-testimonials-pagination',
+            clickable: true
+        },
+        breakpoints:{
+            767:{
+                slidesPerView: 2
+            }
+        }
+    });
+
+</script>
+</body>
+</html>
